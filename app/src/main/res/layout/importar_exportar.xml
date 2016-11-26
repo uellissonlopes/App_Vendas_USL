@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="#000052">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:background="#06189a"
+        android:layout_gravity="center_horizontal" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton_voltar_ie"
+            android:src="@mipmap/icoprev" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Arquivo"
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <Spinner android:id="@+id/spn_arq_cliente"
+            android:layout_width="220dp"
+            android:layout_weight="10"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Diretório:"
+            android:id="@+id/txt_diretorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text=" "
+            android:id="@+id/txtPreencher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:text="importar clientes"
+        android:onClick="click_Carregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_imp_clientes"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="387dp"
+        android:layout_height="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView12"
+        android:layout_gravity="right" />
+
+    <Button android:text="Importar produtos"
+        android:onClick="click_Salvar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_imp_produtos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView11"
+        android:text="Click abaixo para salvar o arquivo usado na geração dos pedidos"
+        android:textAlignment="center"
+        android:textSize="@dimen/abc_text_size_button_material" />
+
+    <Button
+        android:text="Exportar pedidos"
+        android:onClick="click_Salvar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_exp_pedidos" />
+
+    <Button
+        android:text="Exportar Clientes"
+        android:onClick="click_Salvar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_exp_clientes" />
+
+</LinearLayout>

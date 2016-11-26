@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000052">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#000052"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton_voltar_pc"
+                android:src="@mipmap/icoprev"
+                android:background="#00ffffff"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/cidade"
+                android:id="@+id/textView34"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="28dp"
+                android:editable="false" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton_proximo_pc"
+                    android:src="@mipmap/iconext"
+                    android:background="#00ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8d1fae4"
+                android:layout_margin="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner_cidade" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fantasia"
+                android:id="@+id/textView26"
+                android:textStyle="bold"
+                android:background="#00fdfdfd"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8d1fae4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner_clientes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipo de Pagamento"
+                        android:id="@+id/textView7"
+                        android:textStyle="bold"
+                        android:background="#00fdfdfd"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#f8d1fae4">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/spinner_pagamento_pedido"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raz_social"
+                android:id="@+id/textView25"
+                android:textStyle="bold"
+                android:background="#00fdfdfd"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_razao_social_cp"
+                android:editable="false"
+                android:background="#fdfdfd"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/codigo"
+                        android:id="@+id/textView__bc"
+                        android:textStyle="bold"
+                        android:background="#00fdfdfd"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/et_cod_cliente_cp"
+                        android:editable="false"
+                        android:background="#fdfdfd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cnpjCpf"
+                        android:id="@+id/tv_cnpjcpf"
+                        android:textStyle="bold"
+                        android:background="#00fdfdfd"
+                        android:textColor="#ffffff"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/et_cnpj_cpf_cp"
+                        android:editable="false"
+                        android:background="#fdfdfd" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bt_voltar_bc"
+            android:layout_toEndOf="@+id/bt_voltar_bc"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar"
+                android:id="@+id/bt_voltar_bc"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#cecece"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginRight="50dp"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proximo"
+                android:id="@+id/bt_proximo_bc"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="#cecece"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

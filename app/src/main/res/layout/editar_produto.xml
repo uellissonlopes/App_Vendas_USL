@@ -1,0 +1,328 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000052">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#000052"
+            android:layout_gravity="right"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton_voltar_ap"
+                android:src="@mipmap/icoprev"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/nome_produto"
+                android:id="@+id/textView28"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_nome_produto"
+                android:focusable="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="1">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/codigo_produto"
+            android:textStyle="bold"
+            android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/et_Codigo_produto_ap"
+            android:editable="false"
+            android:enabled="true"
+            android:focusable="false"
+            android:background="#ffffff" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.04"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preco"
+
+                    android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_weight="0.05"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/et_preco_produto_ap"
+                        android:background="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disponivel"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:id="@+id/textView29" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff">
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:id="@+id/spinner_disponivel_ep"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <Button
+                        android:id="@+id/bt_salvar_meio_ap"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/salvar"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="#cecece"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unidade"
+                        android:textStyle="bold"
+                        android:id="@+id/textView31"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/et_unidade_ref_ap"
+                        android:background="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produto completo"
+                        android:id="@+id/textView"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/editText_completo_ap"
+                       android:background="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pecas_caixa"
+                        android:id="@+id/tv"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/et_pecas_caixa_ep"
+                        android:inputType="numberDecimal"
+                        android:background="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unidades_por_peca"
+                        android:id="@+id/textView19"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/et_unds_peca_ep"
+                        android:inputType="numberDecimal"
+                        android:background="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btSalvar_alterar_Produto"
+            android:layout_alignEnd="@+id/btSalvar_alterar_Produto"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btVoltar_alterar_prod"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/voltar"
+                android:background="#cecece"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btSalvar_alterar_Produto"
+                android:layout_toStartOf="@+id/btSalvar_alterar_Produto"
+                android:layout_marginRight="50dp" />
+
+            <Button
+                android:id="@+id/btSalvar_alterar_Produto"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/salvar"
+                android:background="#cecece"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+

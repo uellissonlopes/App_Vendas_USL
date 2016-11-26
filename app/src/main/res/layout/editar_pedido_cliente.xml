@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000052"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#000052"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton_voltar_ap"
+                android:src="@mipmap/icoprev"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/fantasia"
+                android:id="@+id/textView18"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_peoximo_ap"
+                    android:src="@mipmap/iconext"
+                    android:background="#00ffffff"
+                    android:adjustViewBounds="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:background="#f8d1fae4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/spinner_cliente_ap"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pagamento"
+                        android:id="@+id/textView7"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp" />
+
+                    <EditText
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/editText_tipo_pagamento_ap"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desconto"
+                        android:id="@+id/textView10"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_weight="0.65" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/et_desconto_ap"
+                        android:text="0"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:numeric="decimal"
+                        android:enabled="true"
+                        android:background="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_pedido"
+                android:id="@+id/tv_cnpjcpf"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_data_pedido_ap"
+                android:editable="false"
+                android:background="#ffffff"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cod_cliente"
+                android:id="@+id/textView__bc"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_cod_cliente_ap"
+                android:editable="false"
+                android:background="#ffffff"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:baselineAligned="true"
+            android:measureWithLargestChild="true"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar"
+                android:id="@+id/bt_voltar_ap"
+                android:background="#cecece"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/bt_proximo_ap"
+                android:layout_toStartOf="@+id/bt_proximo_ap"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="50dp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/proximo"
+                android:id="@+id/bt_proximo_ap"
+                android:background="#cecece"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="#000052">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#000052"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imagebutton_voltar_ic"
+            android:src="@mipmap/icoprev"
+            android:background="#00ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/selecione_arquivo"
+            android:id="@+id/textView41"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="10dp">
+
+        <Spinner android:id="@+id/spn_arq_cliente_ic"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eed7af"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagebutton_importar_clientes_ic"
+            android:src="@mipmap/icone_import130"
+            android:background="#00ffffff"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/btn_imp_clientes_ic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/importar_cliente"
+            android:background="#00ffffff"
+            android:textColor="#01064c"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar"
+            android:id="@+id/button_voltar_ic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#cecece"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:fillViewport="false"
+    android:clickable="false"
+    android:background="#000052">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logo_vendasbr"
+        android:layout_weight="0.20"
+        android:background="#00083b"
+        app:srcCompat="@mipmap/logo_vendasbr"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff9a61"
+            android:baselineAligned="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/cadastro"
+            android:id="@+id/ib_fazer_vendas"
+            android:src="@mipmap/icofazervendas"
+            android:background="#00ff1c2f"
+            android:adjustViewBounds="false"
+                android:baselineAlignBottom="false" />
+
+            <Button
+                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/vendas"
+                android:textSize="40dp"
+                android:textColor="#01064c"
+                android:background="#00ffffff"
+                android:textAlignment="gravity"
+                android:gravity="fill_vertical|center_horizontal"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/bt_fazer_vendas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.20">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#70cc79"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ib_pedidos"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/icogerpedidos"
+                        android:background="#00ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:text="PEDIDOS"
+                        android:id="@+id/bt_pedido"
+                        android:textSize="18dp"
+                        android:background="#00ffffff"
+                        android:textColor="#000c4e"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#74d6c1"
+                        android:layout_margin="4dp"
+                        android:layout_marginTop="0dp">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ib_gerenciar_cad"
+                            android:src="@mipmap/icogerenciar_cad128"
+                            android:background="#00ffffff"
+                            android:layout_margin="5dp" />
+
+                        <Button
+                            android:id="@+id/bt_gerenciar_cad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/gerenciar_cad"
+                            android:layout_weight="0.20"
+                            android:background="#00ffffff"
+                            android:textColor="#01064c"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="#cccfcd">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ib_config"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/icoconfig128"
+                            android:background="#00cccccc"
+                            android:layout_margin="3dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/config"
+                            android:id="@+id/bt_config"
+                            android:textStyle="bold"
+                            android:background="#00ffffff"
+                            android:textColor="#01064c"
+                            android:focusableInTouchMode="false" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Data atual"
+            android:id="@+id/data_atual_tp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20"
+            android:gravity="bottom|center_horizontal"
+            android:background="#000052"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sair"
+            android:id="@+id/bt_tela_principal_sair"
+            android:layout_gravity="center_horizontal"
+            android:background="#d5d5d5"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

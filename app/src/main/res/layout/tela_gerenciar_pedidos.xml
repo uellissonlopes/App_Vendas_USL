@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:fillViewport="false"
+    android:clickable="false"
+    android:background="#000052">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#000052"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ib_voltar_gp"
+                android:src="@mipmap/icoprev"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PEDIDOS"
+                android:id="@+id/textView32"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff9a61"
+            android:baselineAligned="false"
+            android:layout_margin="9dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_exportar_pedidos"
+                android:src="@mipmap/exportar"
+                android:background="#00ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/exportar_pedidos"
+                android:textSize="35dp"
+                android:textColor="#01064c"
+                android:background="#00ffffff"
+                android:textAlignment="gravity"
+                android:gravity="fill_vertical|center_horizontal"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/bt_exportar_pedidos" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.20"
+                android:gravity="center_vertical|center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#70cc79"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="20dp">
+
+                    <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cadastro"
+                    android:id="@+id/ib_visualizar_pedido"
+                    android:src="@mipmap/icone_ver"
+                    android:background="#00ff1c2f"
+                    android:adjustViewBounds="false"
+                        android:baselineAlignBottom="false"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visualizar"
+                        android:id="@+id/bt_visualizar_pedido"
+                        android:textSize="20dp"
+                        android:background="#00ffffff"
+                        android:textColor="#010438"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:background="#1dc9c2"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ib_editar_pedido"
+                        android:src="@mipmap/iconeeditar"
+                        android:background="#00ffffff"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp" />
+
+                    <Button
+                        android:id="@+id/bt_editar_pedido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/editar"
+                        android:background="#00ffffff"
+                        android:textColor="#010439"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical|center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar"
+                android:id="@+id/bt_voltar_gp"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                android:textSize="25dp"
+                android:layout_weight="0.13"
+                android:background="#dddddd" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
